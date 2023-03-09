@@ -18,17 +18,17 @@
 }
 
 .animate {
-  animation: jump 500ms infinite;
+  animation: jump 500ms ease-in-out infinite;
 }
 
 @keyframes jump {
   0% {
     top: 150px;
   }
-  30% {
+  35% {
     top: 100px;
   }
-  70% {
+  60% {
     top: 100px;
   }
   100% {
@@ -43,7 +43,10 @@
   position: relative;
   top: 130px;
   left: 480px;
-  animation: block 1s infinite linear;
+}
+
+.block-moving {
+  animation: block 3s infinite linear;
 }
 
 @keyframes block {
